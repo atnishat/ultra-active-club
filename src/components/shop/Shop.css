@@ -69,3 +69,32 @@
     margin-left: 20px;
     font-weight: 400;
 }
+.e-time{
+    display: flex;
+    background-color: beige;
+    padding-left: 20px;
+}
+.e-time p{
+    padding-left: 40px;
+    padding-top: 6px;
+}
+.b-time{
+    display: flex;
+    background-color: beige;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.b-time p{
+    padding-left: 40px;
+    padding-top: 6px;
+
+}
+.btn-complete{
+    padding: 0 70px;
+    border-radius: 5px;
+    background-color: #00a0ffd6;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}

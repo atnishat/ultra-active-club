@@ -62,6 +62,22 @@ const Shop = () => {
                     </div>
                 </div>
 
+                <div className='exercise-details'>
+                    <h2>Exercise Details</h2>
+                        <div className='e-time'>
+                            <h4>Exercise time:</h4>
+                            <p>0 seconds</p>
+                        </div>
+                        <div className='b-time'>
+                            <h4>Break time:</h4>
+                            <p>0 seconds</p>
+                        </div>
+                </div>
+                <div>
+                    <button className='btn-complete'>
+                        <p>Activity Completed</p>
+                        </button>
+                </div>
 
             </div>
         </div>
