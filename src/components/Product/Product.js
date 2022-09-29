@@ -1,8 +1,9 @@
 import React from 'react';
 import './Product.css'
 const Product = (props) => {
-    console.log(props.product);
+    // console.log(props);
     const {category, forAge, img, name, time} = props.product ;
+   
     return (
         <div className='product'>
             <img src={img} alt=''></img>
@@ -11,7 +12,7 @@ const Product = (props) => {
             <p><small className='age'>For Age: {forAge}</small></p>
             <p><small className='time'>Time Required: {time}</small></p>
 
-            <button className='btn-list'> 
+            <button onClick={() => props.handleClick(props.product)} className='btn-list'> 
             <p>Add To List</p>
             </button>
         </div>
