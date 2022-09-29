@@ -1,9 +1,18 @@
 import React from 'react';
 import logo from '../../Images/logo2.jpg'
-const Cart = ({cart}) => {
-    console.log(cart);
+import './Cart.css'
+
+
+const Cart = (props) => {
+    const {cart} = props;
+    let fullTime;
+
+    for(const product of cart){
+        fullTime = product.time;
+    //    console.log(fullTime);
+    }
     return (
-        <div>
+        <div className='cart'>
                  <div className='cart-container'>
                  <h1>item: {cart.length}</h1>
                 <div className='user-details'>
@@ -45,7 +54,7 @@ const Cart = ({cart}) => {
                     <h2>Exercise Details</h2>
                         <div className='e-time'>
                             <h4>Exercise time:</h4>
-                            <p>0 seconds</p>
+                            <p>{fullTime}</p>
                         </div>
                         <div className='b-time'>
                             <h4>Break time:</h4>
