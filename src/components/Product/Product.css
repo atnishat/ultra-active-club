@@ -2,7 +2,7 @@
 .product{
     
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 1px solid white;
     background-color: #8080802b;
     border-radius: 20px;
@@ -20,3 +20,46 @@
     font-size: 20px;
     font-weight: 500;
 }
+.category{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+}
+.age{
+    padding-right: 160px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.time{
+    padding-right: 140px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn-list{
+    padding: 0 70px;
+    border-radius: 5px;
+    background-color: #00a0ffd6;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}
+.btn-list:hover{
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

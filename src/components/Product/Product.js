@@ -7,9 +7,13 @@ const Product = (props) => {
         <div className='product'>
             <img src={img} alt=''></img>
             <h2 className='name'>{name}</h2>
-            <p>{category}</p>
-            <p><small>For Age: {forAge}</small></p>
-            <p><small>Time: {time}</small></p>
+            <p className='category'>{category}</p>
+            <p><small className='age'>For Age: {forAge}</small></p>
+            <p><small className='time'>Time Required: {time}</small></p>
+
+            <button className='btn-list'> 
+            <p>Add To List</p>
+            </button>
         </div>
     );
 };
