@@ -15,7 +15,7 @@ const Shop = () => {
     const handleClick =(product) =>{
        const newCart = [...cart, product]
         setCart(newCart);
-        console.log(cart,product);
+        // console.log(cart,product);
     }
 
 

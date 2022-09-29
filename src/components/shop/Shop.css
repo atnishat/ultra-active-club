@@ -39,15 +39,18 @@
 .break-time{
     display: flex;
     gap: 20px;
-    background-color: #7c505059;
     border-radius: 10px;
     padding-left: 10px;
 }
-.break-time h5{
+.break-time button{
     background-color: #1e7db5c4;
     padding: 7px 7px;
     color: white;
     border-radius: 50px;
+}
+.break-time button:hover{
+    background-color: white;
+    color: black;
 }
 .info{
     display: flex;
