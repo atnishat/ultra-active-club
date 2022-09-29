@@ -4,6 +4,7 @@
 }
 .cart-container{
     background-color: #8080802b;
+    height: 100%;
 }
 .product-container{
     display: grid;

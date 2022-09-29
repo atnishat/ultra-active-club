@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import logo from '../../Images/logo2.jpg'
 import './Cart.css'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Cart = (props) => {
+    
+    const notify = () => toast(" WOW, Activity Complited!");
+
+
     const {cart} = props;
     let fullTime;
 
-    // const [breakTime , setBreakTime] = useState();
     const clickForBreak =(e)=>{
        const breakTime = e.target.innerText;
        const breakField= document.getElementById('break');
@@ -22,7 +28,7 @@ const Cart = (props) => {
     return (
         <div className='cart'>
                  <div className='cart-container'>
-                 <h1>item: {cart.length}</h1>
+                 {/* <h1>item: {cart.length}</h1> */}
                 <div className='user-details'>
                  
                     <img src={logo} alt="" />
@@ -71,7 +77,8 @@ const Cart = (props) => {
                         </div>
                 </div>
                 <div>
-                    <button className='btn-complete'>
+                    <button onClick={notify} className='btn-complete'>
+                    <ToastContainer />
                         <p>Activity Completed</p>
                         </button>
                 </div>
@@ -79,6 +86,11 @@ const Cart = (props) => {
             </div>
         </div>
     );
+   
 };
+
+
+
+
 
 export default Cart;
